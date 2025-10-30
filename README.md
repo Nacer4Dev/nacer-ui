@@ -2,7 +2,7 @@
 QBCore/Qbox Ui Server Info Script
 
 ## Preview
-[![nacer-ui](https://i.imgur.com/lPrtwIi.png)](https://github.com/Nacer4Dev/nacer-ui "Preview")
+[![nacer-ui](https://i.imgur.com/lPrtwIi.png)](https://i.imgur.com/lPrtwIi.png "Preview")
 
 ## Installation
 1. Download and extract the resource.
