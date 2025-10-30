@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub: @Nacer4Dev</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="hud" class="hud logo" style="display: none;">
+        <div class="logo">
+            <img id="hud-logo" src="assets/img/logo.png" alt="logo">
+        </div>
+        <div class="rw_nm clmn">
+			<span>Nostalgie</span>
+			<span>RolePlay</span>
+		</div>
+    </div>
+
+    <script>
+        window.addEventListener('message', function(event) {
+            if (event.data.action === "showHUD") {
+                const hudElement = document.getElementById('hud');
+                if (hudElement) {
+                    hudElement.style.display = event.data.display ? 'flex' : 'none';
+                }
+            }
+            
+            if (event.data.action === "updateHUD") {
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('hud').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

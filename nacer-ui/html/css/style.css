@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+
+@font-face {
+    font-family: Schabo;
+    src: url('../assets/fonts/SCHABO-Condensed.otf')
+}
+
+.hud {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  z-index: 9999;
+  transform: translateZ(0);
+  transition: opacity 0.25s, transform 0.25s;
+  opacity: 1;
+  flex-direction: row-reverse;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.rw_nm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.rw_nm span:first-child {
+    font-size: 28px;
+    font-family: Schabo;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgb(255, 255, 255)
+}
+
+.rw_nm span:last-child {
+    font-size: 22px;
+    font-family: Mr Dafoe;
+    margin-top: -17.5px;
+    color: #00ff00;
+    text-shadow: 0 0 5px rgb(0, 255, 47);
+}
+
+@media (max-width: 768px) {
+    .rw_nm span:first-child {
+        font-size: 20px;
+    }
+    
+    .rw_nm span:last-child {
+        font-size: 16px;
+        margin-top: -6px;
+    }
+    
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hud {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        gap: 5px;
+    }
+}
